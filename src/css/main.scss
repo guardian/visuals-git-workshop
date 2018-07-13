@@ -9,3 +9,14 @@
 .interactive-atom {
     margin: 0 !important;
 }
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+  color: red;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
