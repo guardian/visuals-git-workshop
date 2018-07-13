@@ -3,7 +3,7 @@
 
 Check that you have git installed with `git --version`
 
-If you don't have it installed, it will prompt you to do so. Do it.
+If you don't have it installed, it will prompt you to do so. [Do it](https://www.atlassian.com/git/tutorials/install-git).
 
 
 To check that you have it configured properly: `git config --list`
@@ -34,7 +34,7 @@ Git will already be initialised for the project.
 
 **Staging area**
 
-If you run `git status` you can see all the files that have been modified in red. In order to save a change in git you need to add the file to the staging area `git add yourfilename`. To remove it from the staging area `git reset yourfilename` removes the file from the staging area. Your changes are still present locally but won't be tracked/committed. In case you want to track the changes in every file you modify, use `git add -A`.
+If you run `git status` you can see all the files that have been modified in red. In order to save a change in git you need to add the file to the staging area `git add yourfilepath/yourfilename`. To remove it from the staging area `git reset yourfilepath/yourfilename` removes the file from the staging area. Your changes are still present locally but won't be tracked/committed. In case you want to track the changes in every file you modify, use `git add -A`.
 You can also add changes programmatically by running `git add -p`.
 
 **Commit your changes**
@@ -44,6 +44,7 @@ Once you have the correct changes in the staging area you are ready to commit. `
 **Remote repositories**
 
 If you want to track your changes on github repo and did not clone the project from github, to connect your local project to the github repo run `git remote add origin https://github.com/user/repo.git` with the url of the github repo (`git remote -v` to verify the remotes you've just added). At the guardian we use repo genesis(https://repo-genesis.herokuapp.com/) to easily set up a new github project.
+If you cloned your repo from github, the project will already be configured with the remotes pointing to that repo.
 
 **Working on branches**
 
@@ -125,4 +126,4 @@ And then checkout a new branch and start working on a new feature
 **Aliases**
 
 If you use Oh my Zsh in your terminal, you can use git aliases to use a shorter syntax for all your git commands
-Ie: git status becomes gst, git checkout becomes gco and so on.
+Ie: git status becomes gst, git checkout becomes gco and so on. You can also configure your own aliases.
